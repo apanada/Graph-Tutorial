@@ -10,7 +10,7 @@ export class NavBarComponent implements OnInit {
   // Should the collapsed nav show?
   showNav: boolean;
 
-  constructor(private authService: AuthService) { }
+  constructor(public authService: AuthService) { }
 
   ngOnInit() {
     this.showNav = false;

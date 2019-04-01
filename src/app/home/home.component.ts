@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
   // The user
   user: any;
 
-  constructor(private authService: AuthService) { }
+  constructor(public authService: AuthService) { }
 
   ngOnInit() {
     this.authenticated = false;
