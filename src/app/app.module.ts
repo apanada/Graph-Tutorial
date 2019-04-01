@@ -5,6 +5,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { faUserCircle } from '@fortawesome/free-regular-svg-icons';
+import { MsalModule } from '@azure/msal-angular';
+import { OAuthSettings } from '../oauth';
 
 library.add(faExternalLinkAlt);
 library.add(faUserCircle);
@@ -26,7 +28,10 @@ import { AlertsComponent } from './alerts/alerts.component';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    MsalModule.forRoot({
+      clientID: OAuthSettings.appId
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
