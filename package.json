@@ -40,7 +40,8 @@
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26",
     "gulp-cli": "2.1.0",
-    "gulp": "4.0.0"
+    "gulp": "4.0.0",
+    "@microsoft/sp-build-web": "1.8.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.13.0",
